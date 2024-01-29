@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c7ac39b9eb.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/tnsaeslogo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Java Software Engineer</p>
+            <h1>Hi, this is <span>NAHOM</span><br>Cloud Computing Specialist, Software Engineer, Backend Developer, Data Scientist</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/main_image.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a proficient Full Stack Developer and Software Engineer currently pursuing my Master's in Computer Science at MIU. I have extensive experience working on a variety of projects, both independently and in team collaborations. My expertise includes developing end-to-end API projects using technologies such as Spring (Boot, Security, MVC, Data, AOP, IOC-Dependency Injection, Cloud), Hibernate, Express, Angular, Node, React, JUnit, Mockito, Bootstrap, JavaScript, ReactJS, Express/NodeJS, Git, MongoDB, MySQL, and AWS.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul class="vertical-skills">
+                        <li><span>Java</span><span id="percent">90%</span></li>
+                        <li><span>Spring Framework</span><span id="percent">85%</span></li>
+                        <li><span>RestApi</span><span id="percent">85%</span></li>
+                        <li><span>MySQL</span><span>80%</span id="percent"></li>
+                        <li><span>PostgreSQL</span><span id="percent">80%</span></li>
+                        <li><span>MongoDB</span><span id="percent">80%</span></li>
+                        <li><span>Kafka</span><span id="percent">80%</span></li>
+                        <li><span>JavaScript</span><span id="percent">80%</span></li>
+                        <li><span>AWS / PCF</span><span id="percent">75%</span></li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022 - Current</span><br>Software Engineer at Cognizant, USA</li>
+                        <li><span>20216 - 2022</span><br>Software Engineer at Liyaa, Asmara, Eritrea</li>
+                        <li><span>2012 - 2026</span><br>Sr. Software Engineer as a Freelance, Asmara, Eritrea</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-2024</span><br>MBA from Mahirishi International University, Fairfeild, IA, USA</li>
+                        <li><span>2008-20012</span><br>BSC from Uiversity of Asmara, Asmara, Eritrea</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Deploying Serverless Architectures</h2>
+                <h3>Serverless Architectures Leveraging AWS Lambda</h3>
+                <p>Responsible for designing and deploying serverless architectures leveraging AWS Lambda, S3, API Gateway, Route 53, and DynamoDB for web applications and services. Develop and optimize backend systems to efficiently handle data storage, execute complex business logic, and enable seamless communication with the frontend.</p>
+                <h3><span><br></span>Desktop Application Development</h3>
+                <p>Develop cross-platform desktop applications. 
+                    Create and enhance backend systems to oversee data storage, execute business logic, and enable seamless communication with the frontend.</p>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+            <div>
+                <i class="fa fa-crop-alt"></i>
+                <h2>Web Development</h2>
+                <h3>Web Application Development</h3>
+                <p>Engage in server-side development for web applications utilizing frameworks such as Spring, Java EE, and similar platforms. Oversee user authentication, data processing, and server-side routing functionalities.</p>
+                <h3><span><br></span>RESTful API Development</h3>
+                <p>Design and build RESTful APIs to facilitate communication between different parts of a web application or to provide services to external applications.</p>
+                <h3><span><br></span>Full-Stack Developmentt</h3>
+                <p> Can work on both the backend and frontend of web applications.</p>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>MIU Dictionary Project</h2>
+<h3>Enterprise Software and Systems</h3>
+<p>Contribute to the development of enterprise-level software, including Customer Relationship Management (CRM) systems, Enterprise Resource Planning (ERP) systems, and other sophisticated applications. Take part in the construction and upkeep of these intricate solutions.</p>
+<h3>Database Integration</h3>
+<p>Collaborate on integrating Java applications with diverse databases such as MongoDB and Cassandra for seamless data management. Craft code to proficiently handle data retrieval, storage, and manipulation tasks.</p>
+<h3>Legacy System Maintenance</h3>
+<p>Undertake the responsibility of maintaining and modernizing legacy systems within the MIU Dictionary Project, ensuring their continued security and operational efficiency.</p>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/java.jpg">
+                <div class="layer">
+                    <h3>REST Data API</h3>
+                    <p>Responsive website which integrates with the REST Countries API to pull country data. You can view the list of all countries and find one via search or by filtering regions. Individual country page, enables you to see further details about the country like border countries. Mobile first workflow and Bootstrap v5 is used to make it responsive.</p>
+                    <a href="https://github.com/nahomdebretsion/waa-june-2022-spring-data.git"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/vanlife.png">
+                <div class="layer">
+                    <h3>Spring JWT Security</h3>
+                    <p>I played a key role in crafting a cross-platform app linking local service providers with customers. As a full-stack developer, my contributions encompassed leveraging Spring Boot, Express.js, Hibernate, and MongoDB. The integration of Spring Security ensured a secure and seamless experience for users, enhancing the overall functionality and reliability of the app.</p>
+                    <a href="https://github.com/nahomdebretsion/Spring-JWT.git"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Library.png">
+                <div class="layer">
+                    <h3>Project MIU Student Registration</h3>
+                    <p>MIU's student registration system, developed with Spring Boot and ReactJS, seamlessly integrates React Router 6, JWT security, and Kubernetes for efficient deployment. The responsive design ensures a user-friendly experience. Students can effortlessly register for courses, and the system prioritizes both security and aesthetics for a robust and visually appealing registration process. </p>
+                    <a href="https://github.com/nahomdebretsion/WAA-Final-Project.git"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><a href="mailto:nahomdebretsion@gmail.com"><i class="fa-solid fa-envelope"></i></a>tinsaeberhane.yohannes@gmail.com</p>
+                <p><a href="tel:641-233-2415"><i class="fa-sharp fa-solid fa-phone"></i></a>641-233-2415</p>
+                <div class="social-icons">
+                    <a href="https://github.com/nahomdebretsion"><i class="fab fa-github"></i></a>
+                    //<a href="https://twitter.com/EWarsay"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://github.com/nahomdebretsion"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/dnahom/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/DEBRETSION.NahomTsehaye-Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <!--Form--> 
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="MessageBody" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+   
+    <div class="copyright">
+        <p>Copyright © 2023 NAHOM. ALL RIGHTS RESERVED. <i class="fa-regular fa-laptop-code"></i></a></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+
+<script>
+     form = document.forms['submit-to-google-sheet'];
+     msg = document.getElementById("msg");
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const formData = new FormData(form);
+
+        try {
+            const response = await fetch('https://x1zld4yczj.execute-api.us-east-1.amazonaws.com/v1/contact', {
+                method: 'POST',
+                body: JSON.stringify(Object.fromEntries(formData)),
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
+
+            if (response.ok) {
+                msg.innerHTML = "Message sent successfully";
+                setTimeout(function () {
+                    msg.innerHTML = "";
+                }, 5000);
+                form.reset();
+            } else {
+                msg.innerHTML = "Error sending message. Please try again.";
+            }
+        } catch (error) {
+            console.error('Error!', error.message);
+            msg.innerHTML = "An error occurred. Please try again later.";
+        }
+    });
+</script>
+
+</body>
+</html>
